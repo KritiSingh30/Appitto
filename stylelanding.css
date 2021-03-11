@@ -1,0 +1,178 @@
+:root{
+    --accent: #3D0001;
+    --textDark: #111715;
+    --textLight: #ebf0ef;
+    --highlight: #F3F6F4;
+}
+body{
+    margin: 0;
+}
+.nav-list{
+    background: white;
+    box-shadow: 0px 0px 10px grey;
+    margin: 0;
+    padding: 1rem  0;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 2rem;
+
+}
+.nav-item a{
+    text-decoration: none;
+    color: var(--textDark);
+}
+.nav-item:first-child{
+    margin-right: auto;
+    margin-left: 2rem;
+    font-weight: 700;
+}
+.nav-item:nth-child(6){
+    margin-left: auto;
+}
+#facebook:hover{
+        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        color: #1877F2;
+}
+#instagram:hover{
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    color:#BE3A8A;
+}
+#twitter:hover{
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    color:#00A2F3;
+}
+
+ @keyframes scale-up-center {
+    0% {
+      transform: scale(1);
+      
+    }
+    100% {
+      transform: scale(2);
+      
+    }
+  }
+  
+.hero-image{
+    background-image: linear-gradient(to right, rgba(1,1,1,1), rgba(255,0,0,0)),url("./hero\ image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.hero-text h1{
+    font-family: 'Playball', cursive;
+    font-size: 100px;
+    color: var(--textLight);
+    margin-left: 90px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.hero-text p{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--highlight);
+    margin-left: 90px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.primaryBtn{
+    display:inline-block;
+    padding:0.5em 3em;
+    margin:0.5em 0.3em 0.3em 0;
+    border: none;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Montserrat',sans-serif;
+    font-weight:200;
+    font-size: 20px;
+    background-color: var(--accent);
+    color: var(--highlight);
+    text-align:center;
+    cursor: pointer;
+}
+#reserve{
+    margin-top: 40px;
+}
+#reserve:hover{
+    -webkit-animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+ @keyframes scale-up-hor-center {
+    0% {
+      transform: scaleX(0.4);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  
+  
+.menu{
+    background-color: #f6f6f6;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23bbbbbb' fill-opacity='0.16'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    height: 90vh;
+    display: flex;
+    flex-direction: column; 
+    padding: 40px 30px 40px 80px;
+}
+.menu h2{
+    font-family: 'Playball', cursive;
+    font-size: 60px;
+    margin-bottom: 0px;
+    padding-bottom: 0;
+    margin: auto;
+}
+.menu-tiles{
+    
+}
+.menu p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+#exploreMenu{
+    margin-left: auto;
+    font-family: 'Playball', cursive;
+    text-decoration: none ;
+    font-size: 25px;
+    color: var(--textDark);
+}
+#descMenu{
+    padding-top: 0;
+    margin: auto;
+}
+.reservations{
+    height: 60vh;
+    display: flex;
+    flex-direction: column; 
+    padding: 40px 30px 40px 80px;
+}
+.reservations h2{
+    font-family: 'Playball', cursive;
+    font-size: 60px;
+    margin-bottom: 0px;
+    padding-bottom: 0;
+    margin: auto;
+}
+.reservations p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin: auto;
+}
+.myform{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#resDate,#fname,#gname{
+    width: auto;
+    height: 40px;
+}
