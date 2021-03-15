@@ -183,3 +183,8 @@ body{
     width: auto;
     height: 40px;
 }
+
+.card-img-top{
+    width: 400px;
+    height: 300px;
+}
