@@ -23,6 +23,12 @@ body{
     margin-right: 2rem;
 
 }
+.nav-item-current{
+    list-style: none;
+    margin-right: 2rem;
+    color: Orange;
+}
+
 .nav-item a{
     text-decoration: none;
     color: var(--textDark);
@@ -60,7 +66,7 @@ body{
   }
   
 .hero-image{
-    background-image: linear-gradient(to right, rgba(1,1,1,1), rgba(255,0,0,0)),url("./hero\ image.jpg");
+    background-image:url("https://www.icicibank.com/managed-assets/images/offer-zone/CulinaryTreats/culinary-treats-dining-offer-d.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -131,13 +137,14 @@ body{
     padding-bottom: 0;
     margin: auto;
 }
-.menu-tiles{
-    
-}
+
 .menu p{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    margin: auto;
 }
+
+
 #exploreMenu{
     margin-left: auto;
     font-family: 'Playball', cursive;
