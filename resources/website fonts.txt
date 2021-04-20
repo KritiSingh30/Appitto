@@ -1,0 +1,12 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+HEADINGS
+font-family: 'Cookie', cursive;
+PARAGRAPH
+font-family: 'Roboto Condensed', sans-serif;
+
+Colors:
+    --accent: #3D0001;
+    --textDark: #111715;
+    --textLight: #ebf0ef;
+
