@@ -1,3 +1,8 @@
+<?php 
+include("http:\\localhost\Appitto\src\php\dbconnect.php");
+error_reporting(0);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,23 +13,23 @@
     <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/src/css/landing.css">
+    <link rel="stylesheet" href="http://localhost/Appitto/src/css/landing.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
-    <script src="/src/js/landing.js"></script>
+    <script src="http://localhost/Appitto/src/js/landing.js"></script>
     <title>Appitto</title>
 </head>
     
 <body>
     <navbar>
         <ul class="nav-list">
-             <li class="nav-item"><a href="/src/html/landing.html">Appitto</a></li>
-             <li class="nav-item"><a href="/src/html/menu.html">Menu</a></li>
-             <li class="nav-item"><a href="/src/html/offers.html">Offers</a></li>
-             <li class="nav-item"><a href="/src/html/reservation.html">Reservations</a></li>
-             <li class="nav-item"><a href="/src/html/contact.html">Contact Us</a></li>
+             <li class="nav-item"><a href="http://localhost/Appitto/src/html/landing.html">Appitto</a></li>
+             <li class="nav-item"><a href="http://localhost/Appitto/src/html/menu.html">Menu</a></li>
+             <li class="nav-item"><a href="http://localhost/Appitto/src/html/offers.html">Offers</a></li>
+             <li class="nav-item"><a href="http://localhost/Appitto/src/html/reservation.html">Reservations</a></li>
+             <li class="nav-item"><a href="http://localhost/Appitto/src/html/contact.html">Contact Us</a></li>
              <li class="nav-item"><a href="#" class="fa fa-facebook" id="facebook"></a></li>
              <li class="nav-item"><a href="#" class="fa fa-instagram" id="instagram"></a></li>
              <li class="nav-item"><a href="#" class="fa fa-twitter" id="twitter"></a></li>
