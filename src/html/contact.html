@@ -8,7 +8,7 @@
     <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/src/css/contact.css">
+    <link rel="stylesheet" href="http://localhost/Appitto/src/css/contact.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -41,12 +41,12 @@
 				<h1>Get In Touch</h1>
 				<p>Call or Email us Regarding Questions or Issues</p>
 			</div>
-			<div class="c-inputs">
-				<input type="text" placeholder="Full Name"/>
-				<input type="email" placeholder="example@example.com"/>
-				<textarea name="message" placeholder="Write Message"></textarea>
-				<button>SEND</button>
-			</div>
+			<form class="c-inputs" action="../php/contact_us.php" method="POST">
+				<input type="text" name="fullname" placeholder="Full Name"/>
+				<input type="email" name="email_id" placeholder="example@example.com"/>
+				<textarea name="message" name="message" placeholder="Write Message"></textarea>
+				<button type=submit>SEND</button>
+            </form>
 		</div>
 		<div class="map">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.916783231849!2d77.2205151146442!3d28.632256082417957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd36dab8ad9f%3A0x7cc5fd8fb85d965f!2sChew%20-%20Pan%20Asian%20Cafe!5e0!3m2!1sen!2sin!4v1618664607134!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
