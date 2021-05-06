@@ -12,10 +12,10 @@ $reservedate = '2021-04-30 00:21:09'; */
 
 $sql = "INSERT INTO contact_us (fullname,email,message) VALUES ('$fname','$email_id','$msg')";
 
-if ($con->query($sql) === TRUE)
+/* if ($con->query($sql) === TRUE)
 { echo "New record created successfully";}
  else
-  { echo "Error: " . $sql . "<br>" . $con->error;}
+  { echo "Error: " . $sql . "<br>" . $con->error;} */
 
 ?>
 <!DOCTYPE html>

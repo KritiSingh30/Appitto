@@ -13,11 +13,11 @@ $reservedate = '2021-04-30 00:21:09'; */
 $sql = "INSERT INTO reservation (num_guests,phone,reserve_date) VALUES ('$guests','$phone','$reservedate')";
 
 /* Uncomment the below code for testing the database update */
-if ($con->query($sql) === TRUE)
+/* if ($con->query($sql) === TRUE)
 { echo "New record created successfully";}
  else
   { echo "Error: " . $sql . "<br>" . $con->error;} 
-
+ */
 ?>
 
 <!DOCTYPE html>
