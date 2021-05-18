@@ -24,18 +24,18 @@ include("../php/dbconnect.php");
 <body>
     <navbar>
         <ul class="nav-list">
-             <li class="nav-item"><a href="http://localhost/Appitto/src/html/landing.html">Appitto</a></li>
+             <li class="nav-item"><a href="http://localhost/Appitto/src/html/landing.php">Appitto</a></li>
              <li class="nav-item"><a href="http://localhost/Appitto/src/html/menu.html">Menu</a></li>
              <li class="nav-item"><a href="http://localhost/Appitto/src/html/offers.html">Offers</a></li>
              <li class="nav-item"><a href="http://localhost/Appitto/src/html/reservation.html">Reservations</a></li>
              <li class="nav-item"><a href="http://localhost/Appitto/src/html/contact.html">Contact Us</a></li>
-             <li class="nav-item"><a href="#" class="fa fa-facebook" id="facebook"></a></li>
-             <li class="nav-item"><a href="#" class="fa fa-instagram" id="instagram"></a></li>
-             <li class="nav-item"><a href="#" class="fa fa-twitter" id="twitter"></a></li>
+             <li class="nav-item"><a href="https://www.facebook.com" class="fa fa-facebook" id="facebook"></a></li>
+             <li class="nav-item"><a href="https://www.instagram.com" class="fa fa-instagram" id="instagram"></a></li>
+             <li class="nav-item"><a href="https://www.twitter.com" class="fa fa-twitter" id="twitter"></a></li>
         </ul>
     </navbar>
 
-    <div class="hero-image">
+    <div class="hero-image" style="background-image: linear-gradient(to right, rgba(1,1,1,1), rgba(255,0,0,0)), url('https://i.ibb.co/CHVPLLs/hero-image-landing.jpg');">
         <div class="hero-text">
             <h1>Appitto</h1>
             <p>Fine dining experience</p>
@@ -53,6 +53,7 @@ include("../php/dbconnect.php");
             <p class="section-text">Appitto displays an inspiring take on French cuisine in a relaxing environment. we believe in everything at its prime. Our focus is to bring the best and most responsibly sourced ingredients to the table.</p>
                 <div class="flex-container">
                     <div class="flex-child magenta" id=holder>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYN0Dfc_wyaf0u113v6QHu8mVHTRYUq8FTIw&usqp=CAU" srcset="">
                     </div>
                     <div class="flex-child green">
                         <p class="normal-text">Get upto</p>
@@ -84,11 +85,11 @@ include("../php/dbconnect.php");
             <p class="section-text">t was a success from the start but quickly became something even bigger... a game changer. We saw what was happening and got excited. Let’s keep going. So we discovered quinoa and expanded the menu to serve a full selection of high-protein salads, wraps, and bowls customizable for all diets. Every body loved it. The all-day power of protein grew in popularity. We all started eating, feeling and moving better. It’s all good.</p>
             <div class="flex-container">
                 <div class="flex-child" id="chef1">
-                    <img src="/images/chef-1.png" alt="Chef Steeve" srcset="">
+                    <img src="https://i.ibb.co/tKCvdkK/chef-1.png" alt="Chef Steeve" srcset="">
                     <p>With the Hasia Restaurant we would like to introduce you to our regional cuisine and hospitality. We offer you authentic Vietnamese cuisine, with fresh ingredients, tastefully prepared.</p>
                 </div>
                 <div class="flex-child" id="chef2">
-                    <img src="/images/chef-2.png" alt="Chef John" srcset="">
+                    <img src="https://i.ibb.co/4Td5HGq/chef-2.png" alt="Chef John" srcset="">
                     <p>With the Hasia Restaurant we would like to introduce you to our regional cuisine and hospitality. We offer you authentic Vietnamese cuisine, with fresh ingredients, tastefully prepared.</p>
                 </div>
             </div>
@@ -112,7 +113,7 @@ include("../php/dbconnect.php");
                     <path d="M190.4 29.8a160.5 160.5 0 00-69.1 305.3l5-97.1s-9.5-3.1-11.5-4.1c-20-8.8-34.6-34.8-34.6-68.6 0-36.8 28.5-68.5 56.1-68.8h.1c27.7.3 56.2 32 56.2 68.8 0 33.8-14.6 59.7-34.6 68.6l-11.6 4.2 5.6 108a160.2 160.2 0 0089.4-3.6l5-96.3a51.6 51.6 0 01-31.3-21.6c-8.7-13 6.7-128.1 6.7-128.1h10v108h10v-108h10.8v108h9.8v-108h11.3v108h10v-108h7.6s15.3 115 6.7 128c-7 10.4-18 18.7-31 21.7l-.4.2 4.3 82.7a160.3 160.3 0 00-80.5-299.3z"/>
                     <path d="M103.7 149c.5-2.4 1.3-4.6 1.3-4.6.3-.9-.2-1.8-1.1-2.4-1-.5-2-.2-2.5.6l-2.7 4.3a46.5 46.5 0 00-4.6 10.2c-1 3.9-2.4 9-3 14.8a40.6 40.6 0 001.4 17.7c3.1 9 5.5 17.7 14.3 26.2 2.8 2.9 5.6 4.8 7.7 6.2l.7.6 1.3.8c1.7.9 2.9 1.2 3 1.2 1 .3 1.8-.2 2.2-.8.3-.8 0-1.7-.6-2.3 0 0-1-.8-2.3-2.5-.9-1-1.8-2.4-3-4l-2.5-3.7c-4.3-6.5-6.7-15.6-10.1-25-.7-2-1.3-4.6-1.5-6.8a97 97 0 012-30.5z"/>
                     <path d="M190.4 0C85.4 0 0 85.4 0 190.4c0 104.9 85.4 190.3 190.4 190.3s190.3-85.4 190.3-190.3C380.7 85.4 295.3 0 190.4 0zm0 366.5c-97.2 0-176.2-79-176.2-176.1 0-97.2 79-176.2 176.2-176.2 97.1 0 176.1 79 176.1 176.2 0 97-79 176.1-176.1 176.1z"/></svg>
-                    <button type="submit" name="submitbtn">Reserve</button>
+                    <button type="submit" name="submitbtn" class="myformbutton">Reserve</button>
                   </div>
                   </form> 
             </div>

@@ -86,7 +86,7 @@ html {
     }
 }
 .hero-image{
-    background-image: linear-gradient(to right, rgba(1,1,1,1), rgba(255,0,0,0)),url("/images/hero-images/hero-image-landing.jpg");
+    background-image: linear-gradient(to right, rgba(1,1,1,1), rgba(255,0,0,0)),url("https://i.ibb.co/CHVPLLs/hero-image-landing.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -183,6 +183,8 @@ hr{
     /*border: 1px solid yellow;*/
     text-align: center;
 }
+
+
 .normal-text{
     font-size: var(--font-size-2xl);
 }
@@ -258,6 +260,7 @@ hr{
   margin-left: 20px;
   border-radius: 10px;
 }
+
 #submitbtn span{
   margin-left: 10px;
   font-size: var(--font-size-2xl);
@@ -272,6 +275,12 @@ hr{
   height: 35px;
   margin-left: 80px;
   margin-top: 8px;
+}
+
+.myformbutton
+{
+    background-color: #BE3A8A;
+    text-align: right;
 }
   /*============================================================*/
   
