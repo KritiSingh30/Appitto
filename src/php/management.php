@@ -83,7 +83,7 @@ include("../php/dbconnect.php");
        			<td><?php echo $num_guest; ?></td>
        			<td><?php echo $phone; ?></td>
        			<td><?php echo $date; ?></td>
-				<td><a href="delete_item.php?id=<?php echo $id; ?>">Delete</a></td>
+				<td><button class="primaryBtn"><a href="delete_item.php?id=<?php echo $id; ?>">Delete</a></button></td>
 				<!-- <td><button class="primaryBtn" id="<?php echo $id; ?>" onclick="delete_me(this, <?php echo $id; ?>)"><i class="fa fa-trash-o"></i> Cancel Booking</button></td>
       		 -->
 			</tr>
@@ -95,90 +95,54 @@ include("../php/dbconnect.php");
        
 	 </div>
 
-        <footer class="footer-distributed">
+	 <footer class="footer-distributed">
 
-			<div class="footer-left">
-				<h3>Appitio</h3>
+		<div class="footer-left">
+		<h3>Appitio</h3>
 
-				<p class="footer-links">
-					<a href="#">Menu</a>
-					|
-					<a href="#">Offers</a>
-					|
-					<a href="#">Reservations</a>
-					|
-					<a href="#">Contact us</a>
-				</p>
+		<p class="footer-links">
+		<a href="http://localhost/Appitto/src/html/menu.html">Menu</a>
+		|
+		<a href="http://localhost/Appitto/src/html/offers.html">Offers</a>
+		|
+		<a href="http://localhost/Appitto/src/html/reservation.html">Reservations</a>
+		|
+		<a href="http://localhost/Appitto/src/html/contact.html">Contact us</a>
+		</p>
 
-				<p class="footer-company-name">© Appitito Restaurant</p>
+		<p class="footer-company-name">© Appitito Restaurant</p>
+		</div>
+
+		<div class="footer-center">
+			<div>
+				<i class="fa fa-map-marker"></i>
+		 		 <p><span>M16, Connaught Cir,
+				Block M, Connaught Place,</span>
+				New Delhi, Delhi 110001</p>
 			</div>
 
-			<div class="footer-center">
-				<div>
-					<i class="fa fa-map-marker"></i>
-					  <p><span>M16, Connaught Cir,
-                        Block M, Connaught Place,</span>
-						New Delhi, Delhi 110001</p>
-
-                          
-				</div>
-
-				<div>
-					<i class="fa fa-phone"></i>
-					<p>+91 22-27782183</p>
-				</div>
-				<div>
-					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:reachus@appitito.com">reachus@appitito.com</a></p>
-				</div>
-			</div>
-			<div class="footer-right">
-				<p class="footer-company-about">
-					<span>About the Restaurant</span>
-					Appitito is one of the most distinguished names in the culinary world as far as Chinese & Thai food is concerned. Since its inception in the year 1982 it has become a name to reckon with.</p>
-				<div class="footer-icons">
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-instagram"></i></a>
-					
-				</div>
-			</div>
-		</footer>
-    </main>
-
-	<script>
-		/* DELETING FROM database, ENVOKED ON BIN CLICK */
-   function delete_me(event, pdid)
-    {
-     
-        console.log(pdid);
+		<div>
+		<i class="fa fa-phone"></i>
+		<p>+91 22-27782183</p>
+		</div>
+		<div>
+		<i class="fa fa-envelope"></i>
+		<p><a href="mailto:reachus@appitito.com">reachus@appitito.com</a></p>
+	</div>
+</div>
+<div class="footer-right">
+	<p class="footer-company-about">
+		<span>About the Restaurant</span>
+		Appitito is one of the most distinguished names in the culinary world as far as Chinese & Thai food is concerned. Since its inception in the year 1982 it has become a name to reckon with.</p>
+	<div class="footer-icons">
+		<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+		<a href="https://www.instagram.com"><i class="fa fa-twitter"></i></a>
+		<a href="https://www.twitter.com"><i class="fa fa-instagram"></i></a>
 		
-        
-        $.ajax({
-            type: "GET",
-            url: '../php/delete_item.php',
-            data: { product_id : pdid},
-            success: function(data){
-          }, error(e){
-              alert(e);
-          }
-         }); 
-         
-    }
-	</script>
-<?php
-
-/* $product_id=$_POST['product_id'];
-
-$sql = "DELETE FROM `reservation` WHERE `reservation_id` = '$product_id';";
-
-if ($conn->query($sql) === TRUE) {
-    echo "Item removed from cart";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}  */
-
-?>
+	</div>
+</div>
+</footer>
+    </main>
 
 </body>
 </html>

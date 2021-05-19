@@ -41,7 +41,7 @@ include("../php/dbconnect.php");
     <main>
         
 		<br>
-		<div class="container">
+		<div class="container-fluid">
  		<table style='border-collapse:collapse;'>
     		<tr>
         		<th>Id</th>

@@ -213,6 +213,7 @@ hr{
 }
 .foodtiles{
     padding: 2px;
+    align-items: center;
 }
 
 .about img{

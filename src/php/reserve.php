@@ -11,10 +11,10 @@ $guest_name=$_POST['fname'] ;
 $sql = "INSERT INTO reservation (num_guests,phone,reserve_date,guest_name) VALUES ('$guests','$phone','$reservedate','$guest_name')";
 
 /* Uncomment the below code for testing the database update */
- /* if ($con->query($sql) === TRUE)
+  if ($con->query($sql) === TRUE)
 { echo "New record created successfully";}
  else
-  { echo "Error: " . $sql . "<br>" . $con->error;}  */
+  { echo "Error: " . $sql . "<br>" . $con->error;}  
  
 ?>
 

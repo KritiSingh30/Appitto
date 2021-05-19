@@ -364,19 +364,26 @@ footer{
 
 }
 
-table, td, th,tr {
+td, th,tr {
     border: 1px solid black;
     text-align: center;
     align-items: center;
-    margin: auto;
+    padding-left: 0px;
+    padding-right: 0px;  
+    padding-top: auto;  
   }
   
-.table {
-    width: 100%;
+table {
+   width: 100%;
     border-collapse: collapse;
     text-align: center;
-  }
+    overflow: auto;
+  } 
 
 .container{
     text-align: center;
+}
+
+a{
+    color: white;
 }
