@@ -126,6 +126,10 @@ html {
     text-align:center;
     cursor: pointer;
 }
+#primaryBtn:hover{
+    color: var(--textLight);
+}
+
 #reserve{
     margin-top: 40px;
 }
@@ -162,77 +166,7 @@ hr{
   margin-right: auto;
   border-top: 4px solid #942022;
 }
-.flex-container {
-    display: flex;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 0px;
-}
-.flex-child {
-    flex: 1;
-    /*border: 2px solid black;*/
-    height: 50vh;
-}  
-.flex-child:first-child {
-    margin-right: 10px;
-} 
-#holder{
-    background: url(/images/restaurant-sitting.jpg);
-}
-.flex-child:nth-child(2){
-    /*border: 1px solid yellow;*/
-    text-align: center;
-}
-.normal-text{
-    font-size: var(--font-size-2xl);
-}
-.normal-text em{
 
-    color: var(--accent);
-}
-.big-text{
-    color: var(--accent);
-    font-size: 5rem;
-    font-weight: 900;
-}  
-.menu,.about{
-    /*border: 1px solid black;*/
-    height: 85vh;
-    margin: 30px 0px;
-    padding: 0 2rem 2rem 2rem;
-}
-.about{
-    padding: 20px;
-    background-color: #111715;
-}
-.menu a:hover{
-    color: var(--accent);
-    text-decoration: underline;
-}
-.foodtiles{
-    padding: 2px;
-}
-
-.about img{
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    margin-right: 0.8rem;
-}
-.about {
-    color: var(--textLight);
-}
-#chef1,#chef2{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 2rem;
-    color: var(--textLight);
-}
-.reserve{
-    height: 50vh;
-    padding-top: 10px;
-}
 
 /*=========================================================*/
 .myform{
@@ -245,36 +179,7 @@ hr{
   width: 300px;
   height: 50px;
 }
-#submitbtn{
-  display: flex;
-  width: 300px;
-  background-color: var(--accent);
-  color: var(--textLight);
-  font-family: var(--paragraphFont);
-  height: 50px;
-  border: none;
-  justify-content: baseline;
-  cursor: pointer;
-  margin-left: 20px;
-  border-radius: 10px;
-}
-#submitbtn span{
-  margin-left: 10px;
-  font-size: var(--font-size-2xl);
-  margin-top: 8px;
-}
-#submitbtn:hover{
-	background-color: var(--textDark);
-}
-#cutlery{
-  fill: var(--textLight);
-  width: 35px;
-  height: 35px;
-  margin-left: 80px;
-  margin-top: 8px;
-}
-  /*============================================================*/
-  
+
 
 footer{
 	position: fixed;
@@ -459,11 +364,19 @@ footer{
 
 }
 
-table, td, th {
+table, td, th,tr {
     border: 1px solid black;
+    text-align: center;
+    align-items: center;
+    margin: auto;
   }
   
-  table {
+.table {
     width: 100%;
     border-collapse: collapse;
+    text-align: center;
   }
+
+.container{
+    text-align: center;
+}

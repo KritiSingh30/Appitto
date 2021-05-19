@@ -40,7 +40,8 @@ include("../php/dbconnect.php");
 
     <main>
         <br>
-  
+		<div class="container">
+		
  		<table style='border-collapse:collapse;'>
     		<tr>
         		<th>Reservation Id</th>
@@ -48,14 +49,15 @@ include("../php/dbconnect.php");
         		<th>Number of Guests</th>
         		<th>Phone Number</th>
         		<th>Booking Time</th>
+				<th>Cancel Booking</th>
     		</tr>
-			<tr>
+			<!-- <tr>
         		<td>demo</td>
        			<td>demo</td>   
         		<td>demo</td>
         		<td>demo</td>
         		<td>demo</td>
-    		</tr>
+    		</tr> -->
 
 <?php 
    
@@ -81,12 +83,15 @@ include("../php/dbconnect.php");
        			<td><?php echo $num_guest; ?></td>
        			<td><?php echo $phone; ?></td>
        			<td><?php echo $date; ?></td>
+				<td><button class="primaryBtn" id="<?php echo $id; ?>" onclick="delete_me(this, <?php echo $id; ?>)"><i class="fa fa-trash-o"></i> Cancel Booking</button></td>
       		</tr>
 
 <?php
     }
 ?>
    		</table> 
+       
+	 </div>
 
         <footer class="footer-distributed">
 
@@ -138,5 +143,28 @@ include("../php/dbconnect.php");
 			</div>
 		</footer>
     </main>
+
+	<script>
+		/* DELETING FROM database, ENVOKED ON BIN CLICK */
+   function delete_me(event, pdid)
+    {
+     
+        console.log(pdid);
+    
+        
+        $.ajax({
+            type: "POST",
+            url: '../php/delete_item.php',
+            data: { product_id : pdid},
+            success: function(data){
+              
+           
+          }, error(e){
+              alert(e);
+          }
+         });
+    
+    }
+	</script>
 </body>
 </html>

@@ -52,9 +52,12 @@ include("../php/dbconnect.php");
             <hr/>
             <p class="section-text">Appitto displays an inspiring take on French cuisine in a relaxing environment. we believe in everything at its prime. Our focus is to bring the best and most responsibly sourced ingredients to the table.</p>
                 <div class="flex-container">
-                    <div class="flex-child magenta" id=holder>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYN0Dfc_wyaf0u113v6QHu8mVHTRYUq8FTIw&usqp=CAU" srcset="">
+                    <div class="flex-child green" id=holder>
+                    <img src="https://i.ibb.co/HHwqfMD/restaurant-sitting.jpg">
                     </div>
+                    <!-- <div class="flex-child green" id=holder>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYN0Dfc_wyaf0u113v6QHu8mVHTRYUq8FTIw&usqp=CAU" srcset="">
+                    </div> -->
                     <div class="flex-child green">
                         <p class="normal-text">Get upto</p>
                         <p class="big-text">10% OFF</p>
@@ -104,10 +107,12 @@ include("../php/dbconnect.php");
                   <input type="number" id="guests" name="guests" min="2" max="8" placeholder="Number of guests" required>
                   <label for="phone"></label>
                   <input type="int" id="phone" name="phone" placeholder="Phone number" required>
-                <!--   pattern="[0-9]{5}-[0-9]{5}" -->
+                  <label for="name"></label>
+                  <input type="string" id="fname" name="fname" placeholder="Your Name" required>
+                   <!--   pattern="[0-9]{5}-[0-9]{5}" -->
                   <label for="bookingtime"></label>
                   <input type="datetime-local" id="bookingtime" name="bookingtime" placeholder="Select date and time" required>
-                  <div id="submitbtn" >
+                  <div id="submitbtn" class="submitbtn" >
                  
                     <svg  id="cutlery" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380.7 380.7" >
                     <path d="M190.4 29.8a160.5 160.5 0 00-69.1 305.3l5-97.1s-9.5-3.1-11.5-4.1c-20-8.8-34.6-34.8-34.6-68.6 0-36.8 28.5-68.5 56.1-68.8h.1c27.7.3 56.2 32 56.2 68.8 0 33.8-14.6 59.7-34.6 68.6l-11.6 4.2 5.6 108a160.2 160.2 0 0089.4-3.6l5-96.3a51.6 51.6 0 01-31.3-21.6c-8.7-13 6.7-128.1 6.7-128.1h10v108h10v-108h10.8v108h9.8v-108h11.3v108h10v-108h7.6s15.3 115 6.7 128c-7 10.4-18 18.7-31 21.7l-.4.2 4.3 82.7a160.3 160.3 0 00-80.5-299.3z"/>
@@ -115,58 +120,58 @@ include("../php/dbconnect.php");
                     <path d="M190.4 0C85.4 0 0 85.4 0 190.4c0 104.9 85.4 190.3 190.4 190.3s190.3-85.4 190.3-190.3C380.7 85.4 295.3 0 190.4 0zm0 366.5c-97.2 0-176.2-79-176.2-176.1 0-97.2 79-176.2 176.2-176.2 97.1 0 176.1 79 176.1 176.2 0 97-79 176.1-176.1 176.1z"/></svg>
                     <button type="submit" name="submitbtn" class="myformbutton">Reserve</button>
                   </div>
-                  </form> 
+                </form> 
             </div>
         </section>
         <footer class="footer-distributed">
 
-			<div class="footer-left">
-				<h3>Appitio</h3>
+<div class="footer-left">
+    <h3>Appitio</h3>
 
-				<p class="footer-links">
-					<a href="#">Menu</a>
-					|
-					<a href="#">Offers</a>
-					|
-					<a href="#">Reservations</a>
-					|
-					<a href="#">Contact us</a>
-				</p>
+    <p class="footer-links">
+        <a href="http://localhost/Appitto/src/html/menu.html">Menu</a>
+        |
+        <a href="http://localhost/Appitto/src/html/offers.html">Offers</a>
+        |
+        <a href="http://localhost/Appitto/src/html/reservation.html">Reservations</a>
+        |
+        <a href="http://localhost/Appitto/src/html/contact.html">Contact us</a>
+    </p>
 
-				<p class="footer-company-name">© Appitito Restaurant</p>
-			</div>
+    <p class="footer-company-name">© Appitito Restaurant</p>
+</div>
 
-			<div class="footer-center">
-				<div>
-					<i class="fa fa-map-marker"></i>
-					  <p><span>M16, Connaught Cir,
-                        Block M, Connaught Place,</span>
-						New Delhi, Delhi 110001</p>
+<div class="footer-center">
+    <div>
+        <i class="fa fa-map-marker"></i>
+          <p><span>M16, Connaught Cir,
+            Block M, Connaught Place,</span>
+            New Delhi, Delhi 110001</p>
 
-                          
-				</div>
+              
+    </div>
 
-				<div>
-					<i class="fa fa-phone"></i>
-					<p>+91 22-27782183</p>
-				</div>
-				<div>
-					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:reachus@appitito.com">reachus@appitito.com</a></p>
-				</div>
-			</div>
-			<div class="footer-right">
-				<p class="footer-company-about">
-					<span>About the Restaurant</span>
-					Appitito is one of the most distinguished names in the culinary world as far as Chinese & Thai food is concerned. Since its inception in the year 1982 it has become a name to reckon with.</p>
-				<div class="footer-icons">
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-instagram"></i></a>
-					
-				</div>
-			</div>
-		</footer>
+    <div>
+        <i class="fa fa-phone"></i>
+        <p>+91 22-27782183</p>
+    </div>
+    <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:reachus@appitito.com">reachus@appitito.com</a></p>
+    </div>
+</div>
+<div class="footer-right">
+    <p class="footer-company-about">
+        <span>About the Restaurant</span>
+        Appitito is one of the most distinguished names in the culinary world as far as Chinese & Thai food is concerned. Since its inception in the year 1982 it has become a name to reckon with.</p>
+    <div class="footer-icons">
+        <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.twitter.com"><i class="fa fa-instagram"></i></a>
+        
+    </div>
+</div>
+</footer>
     </main>
 </body>
 </html>

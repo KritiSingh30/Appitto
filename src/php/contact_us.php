@@ -12,11 +12,11 @@ $reservedate = '2021-04-30 00:21:09'; */
 
 $sql = "INSERT INTO contact_us (fullname,email,message) VALUES ('$fname','$email_id','$msg')";
 
-/* if ($con->query($sql) === TRUE)
-{ echo "New record created successfully";}
+if ($con->query($sql) === TRUE)
+{ echo "Your Query will be answered soon by our executive!";}
  else
-  { echo "Error: " . $sql . "<br>" . $con->error;} */
-
+  { echo "Error: " . $sql . "<br>" . $con->error;} 
+ 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,7 +36,7 @@ $sql = "INSERT INTO contact_us (fullname,email,message) VALUES ('$fname','$email
 </head>
     
 <body>
-<h1>Thank you for reaching out to us!</h1>
+<h3>Thank you for reaching out to us!</h3>
 <a href="../html/landing.php">Take me back to the Home Page</a>
 </body>
 </html>

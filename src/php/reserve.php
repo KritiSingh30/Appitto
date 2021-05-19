@@ -5,19 +5,21 @@ include("../php/dbconnect.php");
 $guests=$_POST['guests'];
 $phone=$_POST['phone'];
 $reservedate = $_POST['bookingtime'];
+$guest_name=$_POST['fname'] ;
+#$guest_name="Sample"
 
 /* $guests=3;
 $phone=365673;
 $reservedate = '2021-04-30 00:21:09'; */
 
-$sql = "INSERT INTO reservation (num_guests,phone,reserve_date) VALUES ('$guests','$phone','$reservedate')";
+$sql = "INSERT INTO reservation (num_guests,phone,reserve_date,guest_name) VALUES ('$guests','$phone','$reservedate','$guest_name')";
 
 /* Uncomment the below code for testing the database update */
-/* if ($con->query($sql) === TRUE)
+ /* if ($con->query($sql) === TRUE)
 { echo "New record created successfully";}
  else
-  { echo "Error: " . $sql . "<br>" . $con->error;} 
- */
+  { echo "Error: " . $sql . "<br>" . $con->error;}  */
+ 
 ?>
 
 <!DOCTYPE html>

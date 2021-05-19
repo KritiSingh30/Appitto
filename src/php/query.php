@@ -41,19 +41,20 @@ include("../php/dbconnect.php");
     <main>
         
 		<br>
+		<div class="container">
  		<table style='border-collapse:collapse;'>
     		<tr>
         		<th>Id</th>
        			<th>Guest Name</th>   
         		<th>Email</th>
         		<th>Message/Query</th>
-            <tr>
+           <!--  <tr>
         		<td>demo</td>
        			<td>demo</td>   
         		<td>demo</td>
         		<td>demo</td>
         		
-    		</tr>
+    		</tr> -->
 
 <?php 
    
@@ -85,7 +86,7 @@ include("../php/dbconnect.php");
     }
 ?>
    		</table> 
-
+      </div>  
         <footer class="footer-distributed">
 
 			<div class="footer-left">
