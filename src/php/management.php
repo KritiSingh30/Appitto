@@ -83,8 +83,10 @@ include("../php/dbconnect.php");
        			<td><?php echo $num_guest; ?></td>
        			<td><?php echo $phone; ?></td>
        			<td><?php echo $date; ?></td>
-				<td><button class="primaryBtn" id="<?php echo $id; ?>" onclick="delete_me(this, <?php echo $id; ?>)"><i class="fa fa-trash-o"></i> Cancel Booking</button></td>
-      		</tr>
+				<td><a href="delete_item.php?id=<?php echo $id; ?>">Delete</a></td>
+				<!-- <td><button class="primaryBtn" id="<?php echo $id; ?>" onclick="delete_me(this, <?php echo $id; ?>)"><i class="fa fa-trash-o"></i> Cancel Booking</button></td>
+      		 -->
+			</tr>
 
 <?php
     }
@@ -150,21 +152,33 @@ include("../php/dbconnect.php");
     {
      
         console.log(pdid);
-    
+		
         
         $.ajax({
-            type: "POST",
+            type: "GET",
             url: '../php/delete_item.php',
             data: { product_id : pdid},
             success: function(data){
-              
-           
           }, error(e){
               alert(e);
           }
-         });
-    
+         }); 
+         
     }
 	</script>
+<?php
+
+/* $product_id=$_POST['product_id'];
+
+$sql = "DELETE FROM `reservation` WHERE `reservation_id` = '$product_id';";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Item removed from cart";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}  */
+
+?>
+
 </body>
 </html>

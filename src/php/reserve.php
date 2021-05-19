@@ -6,11 +6,7 @@ $guests=$_POST['guests'];
 $phone=$_POST['phone'];
 $reservedate = $_POST['bookingtime'];
 $guest_name=$_POST['fname'] ;
-#$guest_name="Sample"
 
-/* $guests=3;
-$phone=365673;
-$reservedate = '2021-04-30 00:21:09'; */
 
 $sql = "INSERT INTO reservation (num_guests,phone,reserve_date,guest_name) VALUES ('$guests','$phone','$reservedate','$guest_name')";
 

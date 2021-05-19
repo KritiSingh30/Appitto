@@ -1,15 +1,22 @@
 <?php
+$db = mysqli_connect("localhost","root","","WT_Project");
 
-include("../php/dbconnect.php");
+if(!$db)
+{
+    die("Connection failed: " . mysqli_connect_error());
+}
 
-$product_id=$_POST['product_id'];
+$id = $_GET['id']; // get id through query string
+$del = mysqli_query($db,"delete from reservation where reservation_id = '$id'"); // delete query
 
-$sql = "DELETE FROM `reservation` WHERE `reservation_id` = '$product_id';";
-
-if ($conn->query($sql) === TRUE) {
-    echo "Item removed from cart";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-} 
+if($del)
+{
+    header("location:management.php"); // redirects to all records page
+    exit;	 
+}
+else
+{
+    echo "Error deleting record"; // display error message if not delete
+}
 
 ?>
